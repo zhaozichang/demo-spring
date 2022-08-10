@@ -8,6 +8,7 @@ import com.itheima.riggie.entity.Dish;
 import com.itheima.riggie.entity.Setmeal;
 import com.itheima.riggie.mapper.CategoryMapper;
 import com.itheima.riggie.service.CategoryService;
+import com.itheima.riggie.service.DishService;
 import com.itheima.riggie.service.SetmealService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -18,7 +19,7 @@ public class CategoryServiceIml extends ServiceImpl<CategoryMapper, Category> im
     @Autowired
     SetmealService setmealService;
     @Autowired
-    DishServiceImpl dishService;
+    DishService dishService;
 
     /****
      * 判断订单中是否关联其他套餐
